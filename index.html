@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta name="theme-color" content="#040c3e" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#040c3e" />
+
+    <title>Proyectos Mecánicos LA (Sermic) - Servicios mecánicos y electromecánicos</title>
+    <meta name="description" content="Diseño, construcción, instalación y mantenimiento de servicios mecánicos y electromecánicos." />
+
+    <meta property="og:title" content="Proyectos Mecánicos LA (Sermic) - Servicios mecánicos y electromecánicos" />
+    <meta property="og:url" content="https://sermictij.com/" />
+    <meta property="og:description" content="Diseño, construcción, instalación y mantenimiento de servicios mecánicos y electromecánicos." />
+    <meta property="og:image" content="assets/img/meta-image.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="sermictij.com/" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="fb:app_id" content="2449976215325423" />
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="icon" href="/favicon.ico" type="image/png" />
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/color.primary.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/vendor/fancybox/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" />
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/--web.css" />
+
+    <link rel="stylesheet" href="assets/fonts/material-design/css/materialdesignicons.min.css" />
+</head>
+
+<body>
+<main>
+
+
+    <!-- ------------------------------------------------------------------------
+    # Top
+    ------------------------------------------------------------------------- -->
+    <section class="--home-hero pt-6 pb-5 py-md-4"  style="background-image: url('assets/img/sermic-cartel.jpg');">
+        <div class="--layer"></div>
+        <div class="container">
+            <div class="row align-items-center justify-content-space-between">
+
+                <div class="col-12 col-md-6 col-lg-6  mt-0">
+                    <h1 class="mb-3">Proyectos Mecánicos LA <span style="opacity: 0.8;">(antes Sermictij)</span></h1>
+                    <p class="--home-hero-p1">Diseño, construcción, instalación y mantenimiento de servicios mecánicos y electromecánicos.</p>
+                    <a href="https://api.whatsapp.com/send?phone=+526642682724&amp;text=Hola, me comunico con usted desde el sitio web." class="btn btn-primary _a-whatsapp"><i class="mdi mdi-whatsapp mr-1"></i> Escribir al WhatsApp</a>
+                    <p class="mt-2 mb-lg-0 _small">Nuestros servicios alcanzan la totalidad del <span class="text-light">territorio mexicano</span>.</p>
+                </div>
+
+
+
+                <div class="col-12 col-md-6 col-lg-5   mt-3 mt-lg-2  mb-3">
+                    <form action="https://formspree.io/f/mdorpwzo"  method="post">
+                        <div class="w-100">
+                            <div class="white-form">
+                                <p class="p-quiero-que-me-contacten">Solicitar información</p>
+
+                                <div class="d-flex">
+
+                                    <div class="mb-3 w-50 pr-2">
+                                        <label class="mb-0" for="nombre">Nombre</label>
+                                        <input type="text" name="nombre" placeholder="Jesús Carrillo" required="" class="mb-0 form-control">
+                                    </div>
+                                    
+                                    <div class="mb-3 w-50 pl-2">
+                                        <label class="mb-0" for="email">Email</label>
+                                        <input type="text" name="email" placeholder="correo@gmail.com" required="" class="mb-0 form-control">
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label class="mb-0" for="mensaje">Mensaje</label>
+                                    <textarea name="mensaje" placeholder="Escribe aquí tu mensaje" required="" class="mb-0 form-control"></textarea>
+                                </div>
+
+                                <p class="p-aceptar-politicas">Al enviar estos datos aceptas las políticas de privacidad y las condiciones de uso.</p>
+
+                                <button type="submit" id="send" class="btn btn-light --btn-dark w-100" onclick="validate(form.email.value)">¡Quiero que me contacten!</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ------------------------------------------------------------------------
+    # Marcas / Logos
+    ------------------------------------------------------------------------- -->
+    <div class="--home-marcas py-2  d-none d-md-block">
+        <div class="container">
+
+          <div class="row">
+            
+            <div class="col-6 col-sm py-3 text-center align-self-center">
+                <img src="assets/img/smacna.png" alt="">
+            </div>
+
+            <div class="col-6 col-sm py-3 text-center align-self-center">
+                <img src="assets/img/nfpa-white.svg" alt="">
+            </div>
+            
+            <div class="col-6 col-sm py-3 text-center align-self-center">
+              <img src="assets/img/us-green-building-council_1.svg" alt="">
+            </div>
+
+            <div class="col-6 col-sm py-3 text-center align-self-center">
+              <img src="assets/img/ashrae.svg" alt="">
+            </div>
+
+            <div class="col-6 col-sm py-3 text-center align-self-center">
+              <img src="assets/img/fm-approved.svg" alt="">
+            </div>
+
+            <div class="col-6 col-sm py-3 text-center align-self-center">
+              <img src="assets/img/ul-certified-gray.svg" alt="">
+            </div>
+
+          </div>
+          
+        </div>
+    </div>
+
+
+
+    <!-- ------------------------------------------------------------------------
+    # Compromiso y Valores
+    ------------------------------------------------------------------------- -->
+    <section id="compromiso-y-valores" class="container-fluid pt-5 pt-md-6 pb-4">
+        <div class="container --px-xs-sm-0">
+            <div class="row align-items-center mb-4">
+                <div class="col-12 col-md-6 mb-4 mb-md-0 pr-lg-6">
+                    <h2 class="mb-3">Compromiso y valores</h2>
+
+                    <p class="parrafo">Proyectos Mecánicos LA es una empresa mexicana que inicia sus operaciones en el 2001 y pasa a ser una sociedad anónima en el 2005.</p>
+
+                    <p class="parrafo">Ofrecemos servicios relacionados con el diseño, construcción, instalación y mantenimiento de servicios mecánicos y electromecánicos. Nuestra experiencia en esta área ha sido satisfactoria, siempre respetando los códigos y normas nacionales e internacionales que el cliente especifique o requiera.</p>
+                    
+                    <p class="parrafo">Nuestro compromiso es servirlo con excelencia en cualquiera de nuestras especialidades.</p>
+                </div>
+
+                <div class="col-12 col-md-6 --div-2">
+                    <a href="assets/img/--sermic-team.jpg" data-fancybox data-caption="Nuestro equipo está compuesto por personal especializado en cada área.">
+                        <img src="assets/img/--sermic-team.jpg" alt=""/>
+                    </a>
+                    <p>Nuestro equipo está compuesto por personal especializado en cada área.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ------------------------------------------------------------------------
+    # Mision y vision
+    ------------------------------------------------------------------------- -->
+    <section id="mision-y-vision" class="container-fluid pt-5 pt-md-6 pb-6">
+        <div class="container --px-xs-sm-0">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="--div-icon mb-4 mb-lg-0">
+                        <h2>Misión</h2>
+                        <p class="parrafo">Desarrollarnos ampliamente como contratistas mecánicos, ofreciendo costos razonables, excelencia y calidad en el trabajo, y realizar servicios profesionales de ingeniería dentro de las empresas comprometidas con el desarrollo y superación de sí mismas, de la región y del país.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="--div-icon mb-4 mb-lg-0">
+                        <h2>Visión</h2>
+                        <p class="parrafo">Satisfacer plenamente las necesidades de nuestros clientes a través de la preparación continua, de nuestro equipo de trabajo, aplicando especialistas en cada ramo para servir en su proyecto, haciendo de nuestro servicio una experiencia satisfactoria y de excelencia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ------------------------------------------------------------------------
+    # Proyectos Mapa
+    ------------------------------------------------------------------------- -->
+    <section id="proyectos-mapa" class="container-fluid pt-6 pb-5 pb-md-6">
+        <div class="container --px-xs-sm-0">
+
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+                    <h2 class="mb-2">Algunos de nuestros clientes</h2>
+                    <p class="mb-5">A lo largo de estos 22 años hemos realizados proyectos en todo el país, y entre nuestros clientes se encuentran...</p>
+                </div>
+            </div>
+            
+            <div class="row align-items-center --div-1">
+                <div class="col-12 col-lg-5 mb-4">
+                    <a href="assets/img/PROYECTOS-MECANICOS-CURRICULUM-2023-x.jpg" data-fancybox="1" data-caption="Proyectos en la república Mexicana">
+                        <img src="assets/img/PROYECTOS-MECANICOS-CURRICULUM-2023-x.jpg" alt="" />
+                    </a>
+                </div>
+
+                <div class="col-12 col-lg-7">
+
+                    <div class="row">
+                        <div class="---card  col-12 col-lg-6  mb-4">
+                            <div class="position-relative">
+                                <div class="position-relative">
+                                    <a href="assets/img/--sermic-1.jpg" data-fancybox="1" data-caption="Instalación de sistema hidrosanitario y hvac. Guadalajara, Jalisco (2020-2023)">
+                                        <img src="assets/img/--sermic-1.jpg" alt="" />
+                                    </a>
+                                </div>
+                                
+                                <div class="mt-2">
+                                    <span class="--spantext-2">Instalación de sistema hidrosanitario y hvac.</span>
+                                </div>
+                                <div>
+                                    <span class="--spantext-3">Guadalajara, Jalisco <span style="opacity: 0.7;">(2020-2023)</span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="---card  col-12 col-lg-6  mb-4">
+                            <div class="position-relative">
+                                <div class="position-relative">
+                                    <a href="assets/img/--sermic-2.jpg" data-fancybox="1" data-caption="Instalación de sistema hvac. Tijuana, Baja California (2022-2023)">
+                                        <img src="assets/img/--sermic-2.jpg" alt="" />
+                                    </a>
+                                </div>
+                                
+                                <div class="mt-2">
+                                    <span class="--spantext-2">Instalación de sistema hvac.</span>
+                                </div>
+                                <div>
+                                    <span class="--spantext-3">Tijuana, Baja California <span style="opacity: 0.7;">(2022-2023)</span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="---card  col-12 col-lg-6  mb-4">
+                            <div class="position-relative">
+                                <div class="position-relative">
+                                    <div class="position-relative">
+                                        <a href="assets/img/--sermic-3.jpg" data-fancybox="1" data-caption="Instalación de sistema hvac. Tijuana, Baja California (2022-2023)">
+                                            <img src="assets/img/--sermic-3.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-2">
+                                    <span class="--spantext-2">Instalación de sistema hvac.</span>
+                                </div>
+                                <div>
+                                    <span class="--spantext-3">Tijuana, Baja California <span style="opacity: 0.7;">(2022-2023)</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="---card  col-12 col-lg-6  mb-4">
+                            <div class="position-relative">
+                                <div class="position-relative">
+                                    <a href="assets/img/--sermic-4.jpg" data-fancybox="1" data-caption="Instalación de sistema hvac. Tijuana, Baja California (2022-2023)">
+                                        <img src="assets/img/--sermic-4.jpg" alt="" />
+                                    </a>
+                                </div>
+                                
+                                <div class="mt-2">
+                                    <span class="--spantext-2">Instalación de sistema hvac.</span>
+                                </div>
+                                <div>
+                                    <span class="--spantext-3">Tijuana, Baja California <span style="opacity: 0.7;">(2022-2023)</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ------------------------------------------------------------------------
+    # Servicios
+    ------------------------------------------------------------------------- -->
+    <section id="servicios" class="container-fluid pt-6 pb-5">
+        <div class="container --px-xs-sm-0">
+
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+                    <h2 class="mb-2">Servicios que ofrecemos</h2>
+                    <p class="mb-5">Construcción, instalación y mantenimiento en el área mecánica y electromecánica, para el sector industrial y comercial.</p>
+                </div>
+            </div>
+
+            <div class="row image-grid">
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-4  mb-3 ---card image-container">
+                    <a href="assets/img/--sermic-13.jpg" data-fancybox="1"
+                        data-caption="Construcción, instalación y mantenimiento en el área mecánica y electromecánica, para el sector industrial y comercial.">
+                        <img src="assets/img/--sermic-13.jpg" alt="" />
+                    </a>
+                </div>
+                
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-4  mb-3 ---card image-container">
+                    <a href="assets/img/--sermic-11.jpg" data-fancybox="1"
+                        data-caption="Construcción, instalación y mantenimiento en el área mecánica y electromecánica, para el sector industrial y comercial.">
+                        <img src="assets/img/--sermic-11.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-4  mb-3 ---card image-container">
+                    <a href="assets/img/--sermic-3.jpg" data-fancybox="1"
+                    data-caption="Construcción, instalación y mantenimiento en el área mecánica y electromecánica, para el sector industrial y comercial.">
+                    <img src="assets/img/--sermic-3.jpg" alt="" />
+                </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-4  mb-3 ---card image-container">
+                    <a href="assets/img/--sermic-12.jpg" data-fancybox="1" 
+                    data-caption="Construcción, instalación y mantenimiento en el área mecánica y electromecánica, para el sector industrial y comercial.">
+                        <img src="assets/img/--sermic-12.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-4  mb-3 ---card image-container">
+                    <a href="assets/img/--sermic-5.jpg" data-fancybox="1" 
+                    data-caption="Construcción, instalación y mantenimiento en el área mecánica y electromecánica, para el sector industrial y comercial.">
+                        <img src="assets/img/--sermic-5.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-4  mb-3 ---card image-container">
+                    <a href="assets/img/--sermic-6.jpg" data-fancybox="1" 
+                    data-caption="Construcción, instalación y mantenimiento en el área mecánica y electromecánica, para el sector industrial y comercial.">
+                        <img src="assets/img/--sermic-6.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-4  mb-3 ---card image-container">
+                    <a href="assets/img/--sermic-7.jpg" data-fancybox="1" 
+                    data-caption="Construcción, instalación y mantenimiento en el área mecánica y electromecánica, para el sector industrial y comercial.">
+                        <img src="assets/img/--sermic-7.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-4  mb-3 ---card image-container">
+                    <a href="assets/img/--sermic-8.jpg" data-fancybox="1" 
+                    data-caption="Construcción, instalación y mantenimiento en el área mecánica y electromecánica, para el sector industrial y comercial.">
+                        <img src="assets/img/--sermic-8.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-4  mb-3 ---card image-container">
+                    <a href="assets/img/--sermic-9.jpg" data-fancybox="1" 
+                    data-caption="Construcción, instalación y mantenimiento en el área mecánica y electromecánica, para el sector industrial y comercial.">
+                        <img src="assets/img/--sermic-9.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+
+        </div>
+            <!-- Ventana Modal -->
+            <div id="modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modal-image">
+            </div>
+    </section>
+
+
+    <!-- ------------------------------------------------------------------------
+    # Contacto
+    ------------------------------------------------------------------------- -->
+    <section id="contacto" class="container-fluid pt-6 pt-md-6 pb-5">
+        <div class="container --px-xs-sm-0">
+
+            <div class="row">
+
+                <div class="col-12 col-sm-6 col-md-4  --div-1">
+                    <div class="--div-icon mb-5 mb-lg-0">
+                        <h2 class="mb-3">Contacto</h2>
+                        <ul>
+                            <li><b>PROYECTOS MECÁNICOS LA, SA DE CV</b></li>
+                            <li>R. F. C.: PME-150206-P47.</li>
+                            <li>Alta Patronal: Z31-28561-10-0</li>
+                            <br>
+                            <li><i class="mdi mdi-pin mr-2 --color-1"></i> Calle Cerro Capirote #20404.</li>
+                            <li>Col. Ampliación Guaycura C.P. 22216.</li>
+                            <li>Tijuana, Baja California, México.</li>
+                            <br>
+                            <li><i class="mdi mdi-phone mr-2 --color-1"></i> Tel. (664) 627 3500</li>
+                            <li><i class="mdi mdi-fax mr-2 --color-1"></i> Fax. (664) 627 9200</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-sm-6 col-md-8  --div-2">
+                    <div class="row">
+<!--                         <div class="col-12 col-lg-6 mb-3">
+                            <a href="assets/img/cedula-fiscal.jpg" data-fancybox data-caption="Cédula de Identificación Fiscal">
+                                <img src="assets/img/cedula-fiscal.jpg" alt=""/>
+                            </a>
+                            <p class="mt-2">Toca la cédula para ampliarla</p>
+                        </div> -->
+                        <div class="col-12 col-lg-6">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1542.764510617362!2d-116.91814842621609!3d32.50495632993466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d938968c176267%3A0x1b8b31c337973b11!2sCerro%20Capirote%2020404%2C%20Amp.%20Guaycura%2C%2022214%20Tijuana%2C%20B.C.%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sar!4v1696020329369!5m2!1ses-419!2sar" width="100%" height="350" style="border-radius: 4px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <a href="https://maps.google.com/?saddr=Current+Location&dirflg=w&daddr=32.505162,-116.917946" target="_blank" style="">Toca aquí para abrir el trayecto hasta el lugar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- ------------------------------------------------------------------------
+    # Footer
+    ------------------------------------------------------------------------- -->
+    <div class="footer-copyright">
+        <div class="container-fluid">
+            <div class="container --px-xs-sm-0">
+
+                <div class="row">
+                    <div class="col-8 col-sm-8 col-lg-9">
+                        <div class="d-md-flex justify-content-between align-items-center text-left text-md-left">
+                            <div class="copyright-text" style="padding: 21px 0 16px 0;">© Proyectos Mecánicos LA (Sermic), 2001-2023. <a style="color: #d9d9d9;  text-decoration: underline;" class="d-none" href="#">Privacidad y Términos.</a></div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-4 col-lg-3  d-flex align-items-center justify-content-end">
+                        <ul class="list-inline text-sm-right" style="padding: 16px 0;">
+                            <li class="list-inline-item">
+                                <a class="btn btn-sm btn-light shadow px-2 bg-facebook mb-0" href="https://www.facebook.com/people/SERMIC-HVAC-Plumbing/100063465166014/" target="_blank"><i class="mdi mdi-facebook mr-0"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-sm btn-light shadow px-2 bg-instagram mb-0" href="https://www.instagram.com/_" target="_blank"><i class="mdi mdi-instagram mr-0"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<main>
+
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/popper.js/umd/popper.min.js"></script>
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<script src="assets/js/functions.js"></script>
+
+<script src="assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+
+<script src="assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+<script>
+    // -----------------------------------------------------------------------------
+    // Permite los tooltips (ventanas que muestra un poco de información sobre algún contenedor en el DOM)
+    // -----------------------------------------------------------------------------
+    $(function () {$('[data-toggle="tooltip"]').tooltip()});
+
+    // -----------------------------------------------------------------------------
+    // Smooth scrolling -- Va hacia el HASH (ej. .com/pagina#section-1)
+    // -----------------------------------------------------------------------------
+    var scrollLink = $('.scroll');
+    
+    scrollLink.click(function(e) {
+        e.preventDefault();
+        $('body,html').animate({
+        scrollTop: $(this.hash).offset().top
+        }, 1000 );
+    });
+
+    // Obtener elementos del DOM
+var modal = document.getElementById('modal');
+var modalImage = document.getElementById('modal-image');
+var images = document.querySelectorAll('.clickable-image');
+
+// Función para abrir la ventana modal con la imagen seleccionada
+function openModal(imageSrc) {
+    modal.style.display = 'block';
+    modalImage.src = imageSrc;
+}
+
+// Función para cerrar la ventana modal
+function closeModal() {
+    modal.style.display = 'none';
+}
+
+// Asignar eventos de clic a las imágenes
+images.forEach(function(image) {
+    image.addEventListener('click', function() {
+        openModal(this.src);
+    });
+});
+
+// Asignar evento de clic para cerrar la ventana modal
+modal.addEventListener('click', closeModal);
+
+// Evitar que el clic en la imagen modal se propague y cierre la ventana
+modalImage.addEventListener('click', function(event) {
+    event.stopPropagation();
+});
+</script>
+
+</body>
+</html>
